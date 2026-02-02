@@ -47,3 +47,9 @@
 .hero-section footer {
     background-color: slateblue;
 }
+
+@media (max-width: 580px) {
+    nav ul {
+        display: none;
+    }
+}
