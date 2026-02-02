@@ -18,3 +18,22 @@
     box-sizing: border-box;
     font-family: "Playwrite NZ Basic", sans-serif;
 }
+
+.hero-section {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section nav {
+    background-color: seagreen;
+}
+
+.hero-section main {
+    background-color: sienna;
+    flex: 1;
+}
+
+.hero-section footer {
+    background-color: slateblue;
+}
