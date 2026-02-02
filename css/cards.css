@@ -5,6 +5,7 @@
     grid-template-columns: repeat(4, minmax(200px, 1fr));
     gap: 1.2rem;
     background-color: var(--dark-black);
+    margin: 0 auto;
 }
 
 .card {
@@ -28,8 +29,8 @@
 
 @media (max-width: 690px) {
     .cards {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        display: flex;
+        flex-direction: column;
 
     }
 }
