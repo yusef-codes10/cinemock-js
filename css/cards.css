@@ -1,6 +1,15 @@
 @import url(/css/global.css);
 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .card {
+    background-color: seagreen;
+}
+
+.card img {
     width: 100px;
     height: 200px;
 }
