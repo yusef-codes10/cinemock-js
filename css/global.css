@@ -1,3 +1,17 @@
+:root {
+    --brand-color: #BB2D3B;
+    --hover-brand: #bb2d3bd6;
+
+    --bg-color: #212529;
+    --dark-black: #000000;
+
+    --yellow: #E6C409;
+
+    --text-color: #FFFFFF;
+    --secondary-bg: #6C757D;
+
+}
+
 * {
     margin: 0;
     padding: 0;
