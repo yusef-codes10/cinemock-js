@@ -27,6 +27,7 @@
 
 .hero-section nav {
     background-color: seagreen;
+    padding: clamp(1rem, 5vw, 3rem);
 }
 
 .hero-section main {
