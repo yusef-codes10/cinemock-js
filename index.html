@@ -15,13 +15,14 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/nav.css">
     <title>Cinemock JS</title>
-    <script src="/src/main.js" defer></script>
+    <script type="module" src="/src/main.js" defer></script>
   </head>
   <body>
     <div class="hero-section">
       <nav>
-        <h2 class="logo">Cine<span>mock</span></h2>
+        <h2 class="logo">Cinemock</h2>
         <div class="nav-content">
           <div class="nav-list">
             <ul>
@@ -32,17 +33,31 @@
             </ul>
           </div>
           <div class="nav-btns">
-            <button>
+            <button class="search-btn">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <button>Sign in</button>
+            <button class="sign-up-btn">Sign in</button>
           </div>
         </div>
       </nav>
       <main>
         <!-- TODO a possible sidebar later -->
         This is the main section
+        <button class="sign-up-btn" id="getStartedBtn">
+            Get started
+        </button>
       </main>
+    </div>
+    <div class="main-section hidden">
+        <nav>
+             <h2 class="logo">Cinemock</h2>
+          <div class="nav-btns">
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="sign-up-btn">Sign in</button>
+          </div>
+        </nav>
     </div>
     <footer>This is the footer</footer>
   </body>

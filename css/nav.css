@@ -1,0 +1,52 @@
+@import url(/css/global.css);
+
+nav {
+    /* background-color: seagreen; */
+    padding: clamp(1rem, 5vw, 2rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: clamp(1rem, 3vw + 0.5rem, 3rem);
+    color: var(--brand-color);
+    font-family: "times new roman", sans-serif;
+    font-weight: 900;
+}
+
+nav ul, .nav-content, a {
+    display: inline-flex;
+    gap: 1rem;
+    list-style-type: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+}
+
+.sign-up-btn {
+    padding: 12px 16px;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--brand-color);
+    cursor: pointer;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.sign-up-btn:hover {
+    background-color: var(--hover-brand);
+}
+
+nav .search-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
