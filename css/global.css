@@ -28,6 +28,8 @@
 .hero-section nav {
     background-color: seagreen;
     padding: clamp(1rem, 5vw, 3rem);
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero-section main {
