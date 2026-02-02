@@ -49,7 +49,7 @@
 }
 
 @media (max-width: 580px) {
-    nav ul {
+    nav ul, .nav-list {
         display: none;
     }
 }
