@@ -20,9 +20,7 @@
 
 .card img {
     width: 100%;
-    height: auto;
-    display: block;   /* remove small bottom spacing */
-    aspect-ratio: 1 / 1; /* optional: force a fixed aspect ratio */
-    object-fit: cover;
-       /* ensures image fills the area nicely */
+    aspect-ratio: 2 / 3; /* poster style */
+    object-fit: cover;    /* fills the space nicely */
+    display: block;
 }
