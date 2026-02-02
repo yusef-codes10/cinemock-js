@@ -139,7 +139,7 @@ const shows = [
     seasons: 4,
     episodes: 36,
     isFavorite: false,
-    poster: 'assets/tv/chilling-adventures-of-sabrina.jpeg',
+    poster: 'assets/tv/the-chilling-adventure-of-sabrina.jpeg',
     description: 'A dark reimagining of Sabrina the Teenage Witch.'
   },
   {
