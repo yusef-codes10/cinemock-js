@@ -9,7 +9,7 @@ const shows = [
     seasons: 1,
     episodes: 6,
     isFavorite: false,
-    poster: 'assets/tv/alias-grace.jpg',
+    poster: 'assets/tv/alias-grace.jpeg',
     description: 'A young Irish immigrant is convicted of murder under mysterious circumstances.'
   },
   {
@@ -22,7 +22,7 @@ const shows = [
     seasons: 5,
     episodes: 62,
     isFavorite: false,
-    poster: 'assets/tv/breaking-bad.jpg',
+    poster: 'assets/tv/breaking-bad.jpeg',
     description: 'A high school chemistry teacher turns to manufacturing methamphetamine.'
   },
   {
@@ -35,7 +35,7 @@ const shows = [
     seasons: 1,
     episodes: 5,
     isFavorite: false,
-    poster: 'assets/tv/chernobyl.jpg',
+    poster: 'assets/tv/chernobyl.jpeg',
     description: 'A dramatization of the 1986 nuclear disaster in the Soviet Union.'
   },
   {
@@ -48,7 +48,7 @@ const shows = [
     seasons: 10,
     episodes: 236,
     isFavorite: false,
-    poster: 'assets/tv/friends.jpg',
+    poster: 'assets/tv/friends.jpeg',
     description: 'Six friends navigate life and love in New York City.'
   },
   {
@@ -61,7 +61,7 @@ const shows = [
     seasons: 1,
     episodes: 1,
     isFavorite: false,
-    poster: 'assets/tv/ginger-and-rosa.jpg',
+    poster: 'assets/tv/ginger-and-rosa.jpeg',
     description: 'Two teenage girls face friendship and fear during the Cold War era.'
   },
   {
@@ -74,7 +74,7 @@ const shows = [
     seasons: 1,
     episodes: 9,
     isFavorite: false,
-    poster: 'assets/tv/inventing-anna.jpg',
+    poster: 'assets/tv/inventing-anna.jpeg',
     description: 'The story of a fake German heiress who conned New York’s elite.'
   },
   {
@@ -87,7 +87,7 @@ const shows = [
     seasons: 3,
     episodes: 39,
     isFavorite: false,
-    poster: 'assets/tv/jessica-jones.jpg',
+    poster: 'assets/tv/jessica-jones.jpeg',
     description: 'A private investigator with super strength faces dark personal demons.'
   },
   {
@@ -100,7 +100,7 @@ const shows = [
     seasons: 7,
     episodes: 146,
     isFavorite: false,
-    poster: 'assets/tv/new-girl.jpg',
+    poster: 'assets/tv/new-girl.jpeg',
     description: 'An upbeat woman moves in with three single men after a bad breakup.'
   },
   {
@@ -113,7 +113,7 @@ const shows = [
     seasons: 2,
     episodes: 15,
     isFavorite: false,
-    poster: 'assets/tv/russian-doll.jpg',
+    poster: 'assets/tv/russian-doll.jpeg',
     description: 'A woman relives the same night over and over in a time loop.'
   },
   {
@@ -126,7 +126,7 @@ const shows = [
     seasons: 2,
     episodes: 16,
     isFavorite: false,
-    poster: 'assets/tv/shadow-and-bone.jpg',
+    poster: 'assets/tv/shadow-and-bone.jpeg',
     description: 'A young soldier discovers a power that could unite her war-torn world.'
   },
   {
@@ -139,7 +139,7 @@ const shows = [
     seasons: 4,
     episodes: 36,
     isFavorite: false,
-    poster: 'assets/tv/chilling-adventures-of-sabrina.jpg',
+    poster: 'assets/tv/chilling-adventures-of-sabrina.jpeg',
     description: 'A dark reimagining of Sabrina the Teenage Witch.'
   },
   {
@@ -152,7 +152,7 @@ const shows = [
     seasons: 9,
     episodes: 201,
     isFavorite: false,
-    poster: 'assets/tv/the-office.jpg',
+    poster: 'assets/tv/the-office.jpeg',
     description: 'A mockumentary about the daily lives of office employees.'
   },
   {
@@ -165,7 +165,7 @@ const shows = [
     seasons: 1,
     episodes: 10,
     isFavorite: false,
-    poster: 'assets/tv/the-outsider.jpg',
+    poster: 'assets/tv/the-outsider.jpeg',
     description: 'A gruesome murder investigation leads to supernatural horrors.'
   },
   {
@@ -178,7 +178,7 @@ const shows = [
     seasons: 1,
     episodes: 7,
     isFavorite: false,
-    poster: 'assets/tv/the-queens-gambit.jpg',
+    poster: 'assets/tv/the-queens-gambit.jpeg',
     description: 'A young chess prodigy rises to fame while battling addiction.'
   },
   {
@@ -191,7 +191,7 @@ const shows = [
     seasons: 1,
     episodes: 8,
     isFavorite: false,
-    poster: 'assets/tv/the-woman-in-the-house.jpg',
+    poster: 'assets/tv/the-woman-in-the-house.jpeg',
     description: 'A parody mystery involving wine, casseroles, and suspicious neighbors.'
   },
   {
@@ -204,7 +204,7 @@ const shows = [
     seasons: 4,
     episodes: 30,
     isFavorite: false,
-    poster: 'assets/tv/true-detective.jpg',
+    poster: 'assets/tv/true-detective.jpeg',
     description: 'Anthology series exploring dark crimes and the people who investigate them.'
   },
   {
@@ -217,7 +217,7 @@ const shows = [
     seasons: 1,
     episodes: 8,
     isFavorite: false,
-    poster: 'assets/tv/wednesday.jpg',
+    poster: 'assets/tv/wednesday.jpeg',
     description: 'Wednesday Addams navigates school, murder, and psychic mysteries.'
   },
   {
@@ -230,7 +230,9 @@ const shows = [
     seasons: 4,
     episodes: 40,
     isFavorite: false,
-    poster: 'assets/tv/you.jpg',
+    poster: 'assets/tv/you.jpeg',
     description: 'A charming man becomes dangerously obsessed with the women he loves.'
   }
 ];
+
+export {shows};
