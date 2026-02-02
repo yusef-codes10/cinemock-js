@@ -37,7 +37,9 @@ body {
 
 @media (max-width: 690px) {
     .cards {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(200px, 1fr));
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
     }
 }
+
+/* TODO: notes about this layout */
