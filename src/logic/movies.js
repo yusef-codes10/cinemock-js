@@ -8,7 +8,7 @@ const movies = [
     director: 'Edward Zwick',
     duration: 143,
     isFavorite: false,
-    poster: 'blood-diamond.jpg',
+    poster: '/assets/movies/inception.jpg',
     description: 'A fisherman, a smuggler, and a journalist join forces during the Sierra Leone Civil War.'
   },
   {
@@ -20,7 +20,7 @@ const movies = [
     director: 'Steven Spielberg',
     duration: 141,
     isFavorite: false,
-    poster: 'catch-me-if-you-can.jpg',
+    poster: 'assets/movies/catch-me-if-you-can.jpeg',
     description: 'A young con artist successfully cons millions before his 19th birthday.'
   },
   {
@@ -32,7 +32,7 @@ const movies = [
     director: 'Quentin Tarantino',
     duration: 165,
     isFavorite: false,
-    poster: 'django-unchained.jpg',
+    poster: 'django-unchained.jpeg',
     description: 'A freed slave sets out to rescue his wife from a brutal plantation owner.'
   },
   {
@@ -44,7 +44,7 @@ const movies = [
     director: 'Christopher Nolan',
     duration: 148,
     isFavorite: false,
-    poster: 'inception.jpg',
+    poster: 'assets/movies/inception.jpg',
     description: 'A skilled thief leads a team into dreams to plant an idea into a target’s mind.'
   },
   {
