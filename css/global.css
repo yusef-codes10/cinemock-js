@@ -17,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Playwrite NZ Basic", sans-serif;
+    text-decoration: none;
 }
 
 .hero-section {
@@ -32,7 +33,7 @@
     justify-content: space-between;
 }
 
-.hero-section nav ul {
+.hero-section nav ul, .nav-content {
     display: inline-flex;
     gap: 1rem;
     list-style-type: none;
