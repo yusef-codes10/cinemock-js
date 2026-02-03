@@ -5,8 +5,11 @@ import { renderShows } from "./ui/render.js";
 
 const mainSection = document.querySelector('.main-section');
 const cardsContainer = document.querySelector('.cards');
+const card =document.querySelector('.card');
 
 
 getStarted();
 
 renderShows(cardsContainer);
+
+addEventListener(card);
