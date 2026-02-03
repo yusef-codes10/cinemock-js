@@ -25,6 +25,7 @@ function addToFavorite(star, shows) {
     // find the show and switch its favorite property
     const show = shows.find(show => show.id === id);
     if (!show) return;
+    console.log(shows.filter(show => show.isFavorite === 'true'));
     toggleStarColor(star);
 }
 
