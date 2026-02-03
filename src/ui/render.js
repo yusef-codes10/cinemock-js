@@ -1,10 +1,14 @@
 // DOM creation/rendering
 import { shows } from "../logic/shows.js";
-import { getFavoriteShows } from "../ui/event.js";
+import { getFavoriteShows, isFavoriteList } from "../ui/event.js";
 
-function renderShows(container, favoriteList) {
+function renderShows(container) {
     shows.forEach(
         show => {
+            if (!isFavoriteList) {
+                console.log('it\'s true, we want the favorite');
+                return;
+            }
             const card = document.createElement('div');
             // const cardImg = document.createElement('img');
             card.classList.add('card');
