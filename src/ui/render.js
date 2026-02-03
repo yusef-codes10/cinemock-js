@@ -5,10 +5,10 @@ import { getFavoriteShows, isFavoriteList } from "../ui/event.js";
 function renderShows(container) {
     shows.forEach(
         show => {
-            if (!isFavoriteList) {
-                console.log('it\'s true, we want the favorite');
-                return;
-            }
+            const list = isFavoriteList() ? getFavoriteShows(shows) : shows;
+
+            container.innerHTML = ''; // clear before re-rendering
+
             const card = document.createElement('div');
             // const cardImg = document.createElement('img');
             card.classList.add('card');
