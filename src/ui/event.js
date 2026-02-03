@@ -31,6 +31,11 @@ function addToFavorite(star, shows) {
     toggleStarColor(star);
 }
 
+function getFavoriteShows(shows) {
+    const favoriteShows = shows.filter(show => show.isFavorite);
+    return favoriteShows;
+}
+
 function toggleStarColor(star) {
     star.classList.toggle('favorite');
 }
