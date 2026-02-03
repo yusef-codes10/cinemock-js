@@ -5,11 +5,15 @@ import { renderShows } from "./ui/render.js";
 
 const mainSection = document.querySelector('.main-section');
 const cardsContainer = document.querySelector('.cards');
-const card =document.querySelector('.card');
+const card = cardsContainer.querySelector('.card');
 
 
 getStarted();
 
 renderShows(cardsContainer);
 
-addEventListener(card);
+// the icon star event
+card.addEventListener('click', e => {
+    const star = e.target.closest('.star');
+    console.log(star);
+})
