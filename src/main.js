@@ -1,11 +1,12 @@
 // this is the main js file
 console.log('js is working');
-import { getStarted, addToFavorite } from "./ui/event.js";
+import { getStarted, addToFavorite, isFavoriteList } from "./ui/event.js";
 import { renderShows } from "./ui/render.js";
 import { shows } from "./logic/shows.js";
 
 const mainSection = document.querySelector('.main-section');
 const cardsContainer = document.querySelector('.cards');
+const signUpBtn = document.getElementById('signUpBtn');
 
 getStarted();
 
@@ -18,3 +19,10 @@ cardsContainer.addEventListener('click', e => {
 
     addToFavorite(star, shows);
 })
+
+// load favorite list
+signUpBtn.addEventListener('click',
+    () => {
+        isFavoriteList() = true;
+    }
+)
