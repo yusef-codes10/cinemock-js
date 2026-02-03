@@ -13,5 +13,6 @@ renderShows(cardsContainer);
 // the icon star event
 cardsContainer.addEventListener('click', e => {
     const star = e.target.closest('.star');
+    if (!star) return;
     console.log(star);
 })
