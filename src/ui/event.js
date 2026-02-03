@@ -45,6 +45,11 @@ function isFavoriteList() {
 function setFavoritList(isFavorite) {
     favoriteList = isFavorite;
     console.log('true');
+    console.log('true');
+    console.log('true');
+    console.log('true');
+    console.log('true');
+
 }
 
 function toggleStarColor(star) {

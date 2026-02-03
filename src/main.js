@@ -23,7 +23,7 @@ cardsContainer.addEventListener('click', e => {
 // load favorite list
 signUpBtn.addEventListener('click',
     () => {
-        isFavoriteList(true);
+        setFavoritList(false);
         console.log('yes');
     }
 )
