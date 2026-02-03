@@ -23,7 +23,9 @@ cardsContainer.addEventListener('click', e => {
     const show = shows.find(s => s.id === id);
     if (!show) return;
 
+    show.isFavorite = !isFavorite;
+    addToFavorite(star);
+
 
     // console.log(star);
-    addToFavorite(star);
 })
