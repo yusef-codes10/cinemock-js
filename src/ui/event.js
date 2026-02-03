@@ -16,6 +16,11 @@ function hideHeroSection() {
     getStartedBtn.closest('.hero-section').classList.add('hidden');
 }
 
+function addToFavorite(star) {
+    star.classList.toggle('favorite');
+    // star.classList.toggle('star');
+}
+
 
 // // Card icon fav event
 // function addToFavorite(card) {
@@ -26,4 +31,4 @@ function hideHeroSection() {
 //         })
 // }
 
-export {getStarted};
+export {getStarted, addToFavorite};

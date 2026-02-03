@@ -1,6 +1,6 @@
 // this is the main js file
 console.log('js is working');
-import { getStarted } from "./ui/event.js";
+import { getStarted, addToFavorite } from "./ui/event.js";
 import { renderShows } from "./ui/render.js";
 
 const mainSection = document.querySelector('.main-section');
@@ -15,4 +15,5 @@ cardsContainer.addEventListener('click', e => {
     const star = e.target.closest('.star');
     if (!star) return;
     console.log(star);
+    addToFavorite(star);
 })
