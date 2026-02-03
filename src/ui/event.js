@@ -22,6 +22,8 @@ function addToFavorite(star) {
 }
 
 
+
+
 // // Card icon fav event
 // function addToFavorite(card) {
 //     card.addEventListener('click',

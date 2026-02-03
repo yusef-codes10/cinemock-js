@@ -10,6 +10,7 @@ function renderShows(container) {
             // cardImg.src = show.poster;
             // cardImg.alt = show.title;
 
+            card.dataset.id = show.id; // 🔑 LINK UI → DATA
             card.innerHTML = `
                 <img src = "${show.poster}" alt = "${show.title}">
                 <i class="fa-solid fa-star star"></i>
