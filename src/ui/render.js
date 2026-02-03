@@ -12,6 +12,8 @@ function renderShows(container) {
 
             card.innerHTML = `
                 <img src = "${show.poster}" alt = "${show.title}">
+                <i class="fa-solid fa-star"></i>
+
             `;
             // card.appendChild(cardImg);
             container.appendChild(card);
