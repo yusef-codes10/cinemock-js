@@ -14,6 +14,9 @@ renderShows(cardsContainer);
 cardsContainer.addEventListener('click', e => {
     const star = e.target.closest('.star');
     if (!star) return;
-    console.log(star);
+
+    const card = star.closest('.card');
+    console.log(card);
+    // console.log(star);
     addToFavorite(star);
 })
