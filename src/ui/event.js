@@ -42,6 +42,11 @@ function isFavoriteList() {
     return favoriteList;
 }
 
+function setFavoritList(isFavorite) {
+    favoriteList = isFavorite;
+    console.log('true');
+}
+
 function toggleStarColor(star) {
     star.classList.toggle('favorite');
 }
@@ -58,4 +63,6 @@ function toggleStarColor(star) {
 //         })
 // }
 
-export {getStarted, addToFavorite, getFavoriteShows, isFavoriteList};
+export {getStarted, addToFavorite, getFavoriteShows, isFavoriteList,
+    setFavoritList
+};

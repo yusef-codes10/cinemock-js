@@ -1,6 +1,6 @@
 // this is the main js file
 console.log('js is working');
-import { getStarted, addToFavorite, isFavoriteList } from "./ui/event.js";
+import { getStarted, addToFavorite, isFavoriteList, setFavoritList } from "./ui/event.js";
 import { renderShows } from "./ui/render.js";
 import { shows } from "./logic/shows.js";
 
@@ -23,6 +23,7 @@ cardsContainer.addEventListener('click', e => {
 // load favorite list
 signUpBtn.addEventListener('click',
     () => {
-        isFavoriteList() = true;
+        isFavoriteList(true);
+        console.log('yes');
     }
 )
