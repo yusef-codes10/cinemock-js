@@ -3,11 +3,11 @@ import { shows } from "../logic/shows.js";
 import { getFavoriteShows, isFavoriteList } from "../ui/event.js";
 
 function renderShows(container) {
-    shows.forEach(
-        show => {
-            const list = isFavoriteList() ? getFavoriteShows(shows) : shows;
+    const list = isFavoriteList() ? getFavoriteShows(shows) : shows;
 
-            container.innerHTML = ''; // clear before re-rendering
+    container.innerHTML = ''; // clear before re-rendering
+    list.forEach(
+        show => {
 
             const card = document.createElement('div');
             // const cardImg = document.createElement('img');
