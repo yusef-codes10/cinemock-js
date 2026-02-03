@@ -20,12 +20,10 @@ cardsContainer.addEventListener('click', e => {
     console.log(card);
 
     // find the show and switch its favorite property
-    const show = shows.find(s => s.id === id);
+    const show = shows.find(show => show.id === card.id);
     if (!show) return;
 
     show.isFavorite = !isFavorite;
     addToFavorite(star);
-
-
     // console.log(star);
 })
