@@ -1,6 +1,8 @@
 // event listeners (click, submit)
 const getStartedBtn = document.querySelector('#getStartedBtn');
 
+let favoriteList = false;
+
 function getStarted() {
     getStartedBtn.addEventListener('click', () => {
         hideHeroSection();
@@ -36,6 +38,10 @@ function getFavoriteShows(shows) {
     return favoriteShows;
 }
 
+function isFavoriteList() {
+    return favoriteList;
+}
+
 function toggleStarColor(star) {
     star.classList.toggle('favorite');
 }
@@ -52,4 +58,4 @@ function toggleStarColor(star) {
 //         })
 // }
 
-export {getStarted, addToFavorite};
+export {getStarted, addToFavorite, getFavoriteShows, isFavoriteList};

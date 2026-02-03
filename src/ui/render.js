@@ -1,7 +1,8 @@
 // DOM creation/rendering
 import { shows } from "../logic/shows.js";
+import { getFavoriteShows } from "../ui/event.js";
 
-function renderShows(container) {
+function renderShows(container, favoriteList) {
     shows.forEach(
         show => {
             const card = document.createElement('div');
