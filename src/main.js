@@ -19,11 +19,13 @@ cardsContainer.addEventListener('click', e => {
     const card = star.closest('.card');
     console.log(card);
 
+    const id = Number(card.dataset.id);
+
     // find the show and switch its favorite property
-    const show = shows.find(show => show.id === card.id);
+    const show = shows.find(show => show.id === id);
     if (!show) return;
 
-    show.isFavorite = !isFavorite;
+    show.isFavorite = !show.isFavorite;
     addToFavorite(star);
     // console.log(star);
 })
