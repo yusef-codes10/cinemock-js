@@ -16,16 +16,16 @@ cardsContainer.addEventListener('click', e => {
     const star = e.target.closest('.star');
     if (!star) return;
 
-    const card = star.closest('.card');
-    console.log(card);
+    // const card = star.closest('.card');
+    // console.log(card);
 
-    const id = Number(card.dataset.id);
+    // const id = Number(card.dataset.id);
 
-    // find the show and switch its favorite property
-    const show = shows.find(show => show.id === id);
-    if (!show) return;
+    // // find the show and switch its favorite property
+    // const show = shows.find(show => show.id === id);
+    // if (!show) return;
 
-    show.isFavorite = !show.isFavorite;
-    addToFavorite(star);
+    // show.isFavorite = !show.isFavorite;
+    addToFavorite(star, shows);
     // console.log(star);
 })

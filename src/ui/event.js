@@ -16,9 +16,20 @@ function hideHeroSection() {
     getStartedBtn.closest('.hero-section').classList.add('hidden');
 }
 
-function addToFavorite(star) {
+function addToFavorite(star, shows) {
+    const card = star.closest('.card');
+    console.log(card);
+
+    const id = Number(card.dataset.id);
+
+    // find the show and switch its favorite property
+    const show = shows.find(show => show.id === id);
+    if (!show) return;
+    toggleStarColor(star);
+}
+
+function toggleStarColor(star) {
     star.classList.toggle('favorite');
-    // star.classList.toggle('star');
 }
 
 
