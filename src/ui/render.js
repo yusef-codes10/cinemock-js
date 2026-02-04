@@ -17,7 +17,7 @@ function renderShows(container) {
 
             card.dataset.id = show.id; // 🔑 LINK UI → DATA
 
-            // Add 'favorite' class to star if show is marked as favorite
+            // 3️⃣ Add 'favorite' class to star if show is marked as favorite
             const starClass = show.isFavorite ? 'fa-solid fa-star star favorite' : 'fa-solid fa-star star';
             card.innerHTML = `
                 <img src = "${show.poster}" alt = "${show.title}">
