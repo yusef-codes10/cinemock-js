@@ -27,7 +27,8 @@ function clickNav(nav) {
 }
 
 
-// cardContainer is not defined
+//? cardContainer is not defined
+// ? declaring the container twice is causign some bugs
 const cardsContainer = document.querySelector('.cards');
 
 // load favorite list
