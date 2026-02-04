@@ -21,7 +21,7 @@ function renderShows(container) {
             const starClass = show.isFavorite ? 'fa-solid fa-star star favorite' : 'fa-solid fa-star star';
             card.innerHTML = `
                 <img src = "${show.poster}" alt = "${show.title}">
-                <i class="fa-solid fa-star star ${starClass}"></i>
+                <i class="${starClass}"></i>
 
             `;
             // card.appendChild(cardImg);
