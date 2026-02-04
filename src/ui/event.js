@@ -31,6 +31,7 @@ function addToFavorite(star, shows) {
     show.isFavorite = !show.isFavorite;
 
     // we should save to localStorage here, no need for another array. Since we do have one Source of truth
+    localStorage.setItem('shows', JSON.stringify(shows));
 
     console.log(shows.filter(show => show.isFavorite));
     toggleStarColor(star);
