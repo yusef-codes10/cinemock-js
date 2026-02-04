@@ -29,6 +29,7 @@ function clickNav(nav) {
     })
 
 }
+const cardsContainer = document.querySelector('.cards');
 
 // 1️⃣ get rid of showFavorite() that causes double event listener, thus double carContainer elememt
 
