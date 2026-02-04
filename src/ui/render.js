@@ -36,4 +36,11 @@ function loadFromLocalStorage() {
     return shows;
 }
 
+function checkLocalStorgae() {
+    const value = localStorage.getItem('shows');
+
+    if (value === null) return false;
+    return true;
+}
+
 export {renderShows};
