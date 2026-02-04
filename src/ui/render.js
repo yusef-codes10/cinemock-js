@@ -5,12 +5,9 @@ import { getFavoriteShows, isFavoriteList } from "../ui/event.js";
 function renderShows(container) {
     const list = isFavoriteList() ? getFavoriteShows(shows) : loadFromLocalStorage();
 
-    // !2- load from local Storage
-
     container.innerHTML = ''; // clear before re-rendering
     list.forEach(
         show => {
-
             const card = document.createElement('div');
             // const cardImg = document.createElement('img');
             card.classList.add('card');
@@ -25,17 +22,17 @@ function renderShows(container) {
                 <img src = "${show.poster}" alt = "${show.title}">
                 <i class="${starClass}"></i>
 
-            `;
-            // card.appendChild(cardImg);
+                `;
+                // card.appendChild(cardImg);
             container.appendChild(card);
         }
     )
 };
 
+// !2- load from local Storage
 function loadFromLocalStorage() {
-    // localStorage.getItem('shows', )
     const shows = JSON.parse(localStorage.getItem('shows'));
-    // console.log(shows);
+
     return shows;
 }
 
