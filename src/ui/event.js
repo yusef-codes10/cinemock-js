@@ -33,7 +33,11 @@ function addToFavorite(star, shows) {
 
     //!1- we should save to localStorage here, no need for another array. Since we do have one Source of truth
     // ? an array of ids
-    favIDs.push(show.id);
+    // Save to localStorage: get all current favorite IDs
+    const favIDs = shows
+        .filter(show => show.isFavorite)
+        .map(show => show.id);
+
     localStorage.setItem('shows', JSON.stringify(favIDs));
 
     console.log(shows.filter(show => show.isFavorite));
