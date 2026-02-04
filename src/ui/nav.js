@@ -12,6 +12,7 @@ function clickNav(nav) {
         if (!link) return;
         e.preventDefault(); // Optional: stops default link behavior
 
+        // 2️⃣ call enderShows() each time + setFavoriteList(), that's it.
         if (link.textContent === 'Home') {
             console.log('hhome');
             setFavoritList(false); // Show all shows
