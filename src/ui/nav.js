@@ -14,9 +14,12 @@ function clickNav(nav) {
 
         if (link.textContent === 'Home') {
             console.log('hhome');
+            setFavoritList(false); // Show all shows
+            renderShows(cardsContainer);
         } if (link.textContent === 'TV Series') {
             console.log('TV Series');
-            showFavorite(link);
+            setFavoritList(true); // Show only favorites
+            renderShows(cardsContainer);
         } if (link.textContent === 'Movies') {
             console.log('movis');
         } if (link.textContent === 'Settings') {
