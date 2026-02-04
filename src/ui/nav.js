@@ -14,9 +14,9 @@ function clickNav(nav) {
 
         if (link.textContent === 'Home') {
             console.log('hhome');
-            showFavorite(link);
         } if (link.textContent === 'TV Series') {
             console.log('TV Series');
+            showFavorite(link);
         } if (link.textContent === 'Movies') {
             console.log('movis');
         } if (link.textContent === 'Settings') {
@@ -25,6 +25,10 @@ function clickNav(nav) {
     })
 
 }
+
+
+// cardContainer is not defined
+const cardsContainer = document.querySelector('.cards');
 
 // load favorite list
 function showFavorite(element) {
