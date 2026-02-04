@@ -1,6 +1,10 @@
 // navigatin logic
 
 
+function clickNavLists(navLists) {
+    navLists.forEach(nav => clickNav(nav));
+}
+
 function clickNav(nav) {
     nav.addEventListener('click', e => {
         const link = e.target.closest('a');
@@ -20,4 +24,4 @@ function clickNav(nav) {
 
 }
 
-export {clickNav};
+export {clickNavLists};
