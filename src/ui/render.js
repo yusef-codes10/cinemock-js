@@ -41,6 +41,10 @@ function loadFromLocalStorage() {
     return savedShows;
 }
 
+function renderFromLocalStorage() {
+
+}
+
 function checkLocalStorgae() {
     const value = localStorage.getItem('shows');
 
