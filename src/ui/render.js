@@ -3,7 +3,7 @@ import { shows } from "../logic/shows.js";
 import { getFavoriteShows, isFavoriteList } from "../ui/event.js";
 
 function renderShows(container) {
-    const list = isFavoriteList() ? getFavoriteShows(shows) : shows;
+    const list = isFavoriteList() ? getFavoriteShows(shows) : loadFromLocalStorage();
 
     // !2- load from local Storage
 
@@ -31,5 +31,12 @@ function renderShows(container) {
         }
     )
 };
+
+function loadFromLocalStorage() {
+    // localStorage.getItem('shows', )
+    const shows = JSON.parse(localStorage.getItem('shows'));
+    // console.log(shows);
+    return shows;
+}
 
 export {renderShows};
