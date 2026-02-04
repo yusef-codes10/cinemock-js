@@ -1,5 +1,6 @@
 // navigatin logic
-
+import { setFavoritList } from "./event.js";
+import { renderShows } from "./render.js";
 
 function clickNavLists(navLists) {
     navLists.forEach(nav => clickNav(nav));
@@ -13,6 +14,7 @@ function clickNav(nav) {
 
         if (link.textContent === 'Home') {
             console.log('hhome');
+            showFavorite(link);
         } if (link.textContent === 'TV Series') {
             console.log('TV Series');
         } if (link.textContent === 'Movies') {
@@ -22,6 +24,17 @@ function clickNav(nav) {
         }
     })
 
+}
+
+// load favorite list
+function showFavorite(element) {
+    element.addEventListener('click',
+        () => {
+            setFavoritList(true);
+            console.log('yes');
+            renderShows(cardsContainer);
+        }
+    )
 }
 
 export {clickNavLists};

@@ -22,15 +22,6 @@ cardsContainer.addEventListener('click', e => {
     addToFavorite(star, shows);
 })
 
-// load favorite list
-signUpBtn.addEventListener('click',
-    () => {
-        setFavoritList(true);
-        console.log('yes');
-        renderShows(cardsContainer);
-    }
-)
-
 console.log(navLists);
 
 clickNavLists(navLists);
