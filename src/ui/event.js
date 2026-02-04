@@ -48,29 +48,11 @@ function isFavoriteList() {
 
 function setFavoritList(isFavorite) {
     favoriteList = isFavorite;
-    console.log('true');
-    console.log('true');
-    console.log('true');
-    console.log('true');
-    console.log('true');
-
 }
 
 function toggleStarColor(star) {
     star.classList.toggle('favorite');
 }
-
-
-
-
-// // Card icon fav event
-// function addToFavorite(card) {
-//     card.addEventListener('click',
-//         e => {
-//             const star = e.target.classList.contains('star');
-//             console.log(star);
-//         })
-// }
 
 export {getStarted, addToFavorite, getFavoriteShows, isFavoriteList,
     setFavoritList
