@@ -34,10 +34,11 @@ function loadFromLocalStorage() {
 
     if (!checkLocalStorgae()) {
         // runs ONLY when 'shows' does NOT exist in localStorage
+        return shows;
     }
-    const shows = JSON.parse(localStorage.getItem('shows'));
+    const savedShows = JSON.parse(localStorage.getItem('shows'));
 
-    return shows;
+    return savedShows;
 }
 
 function checkLocalStorgae() {
