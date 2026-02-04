@@ -259,6 +259,9 @@ function initializeFavortites() {
       show.isFavorite = savedIDs.includes(show.id);
     });
   }
-}
+};
+
+// Call this immediately
+initializeFavorites();
 
 export { shows };
