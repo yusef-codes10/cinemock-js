@@ -31,6 +31,10 @@ function renderShows(container) {
 
 // !2- load from local Storage
 function loadFromLocalStorage() {
+
+    if (!checkLocalStorgae()) {
+        // runs ONLY when 'shows' does NOT exist in localStorage
+    }
     const shows = JSON.parse(localStorage.getItem('shows'));
 
     return shows;
