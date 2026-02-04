@@ -29,20 +29,6 @@ function clickNav(nav) {
 
 }
 
-
-//? cardContainer is not defined
-// ? declaring the container twice is causign some bugs
-const cardsContainer = document.querySelector('.cards');
-
-// load favorite list
-function showFavorite(element) {
-    element.addEventListener('click',
-        () => {
-            setFavoritList(true);
-            console.log('yes');
-            renderShows(cardsContainer);
-        }
-    )
-}
+// 1️⃣ get rid of showFavorite() that causes double event listener, thus double carContainer elememt
 
 export {clickNavLists};
