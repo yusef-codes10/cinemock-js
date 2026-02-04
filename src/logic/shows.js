@@ -251,7 +251,7 @@ const shows = [
 ];
 
 // Load favorites from localStorage and sync with shows array
-function initializeFavortites() {
+function initializeFavorites() {
   const savedIDs = JSON.parse(localStorage.getItem("shows"));
 
   if (savedIDs && Array.isArray(savedIDs)) {
